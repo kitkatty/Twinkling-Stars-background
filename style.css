@@ -56,7 +56,7 @@ Twinkle , twinkle little star.
 }
 
 .huge-text span {
-  animation: blinking-cursor 0.75s step-end infinite;
+  animation: blinking-cursor 1.1s step-end infinite;
 }
 
 .huge-text:before {
@@ -64,7 +64,7 @@ Twinkle , twinkle little star.
   white-space: pre-wrap;
   display: inline-block;
   overflow: hidden;
-  animation: type 12s steps(60, end) forwards;
+  animation: type 12s steps(40, end) forwards;
 }
 
 @keyframes type {
@@ -91,4 +91,5 @@ Twinkle , twinkle little star.
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  z-index: 9999; /* ensure the text displays over other elements */
 }
