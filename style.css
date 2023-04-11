@@ -45,26 +45,34 @@ Twinkle , twinkle little star.
   -webkit-animation:move-twink-back 200s linear infinite; /* Chrome, Safari, Opera */ 
   animation:move-twink-back 200s linear infinite;
 }
-
 .huge-text {
   font-size: 4rem;
   font-weight: bold;
   color: white;
-  white-space: nowrap;
   overflow: hidden;
+  white-space: nowrap;
   border-right: 0.15em solid transparent;
+  display: inline-block;
 }
 
 .huge-text span {
-  animation: type 12s steps(60, end), blinking-cursor 0.75s step-end infinite;
+  animation: blinking-cursor 0.75s step-end infinite;
+}
+
+.huge-text:before {
+  content: "                              "; /* Add at least as many spaces as characters in your text */
+  white-space: pre-wrap;
+  display: inline-block;
+  overflow: hidden;
+  animation: type 12s steps(60, end) forwards;
 }
 
 @keyframes type {
-  0% {
-    width: 0;
-  }
-  100% {
+  from {
     width: 100%;
+  }
+  to {
+    width: 0;
   }
 }
 
