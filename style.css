@@ -60,7 +60,7 @@ Twinkle , twinkle little star.
 }
 
 .huge-text:before {
-  content: "                        ☥☥☥☥☥☥☥☥☥☥☥☥☥☥☥☥☥☥☥☥☥☥☥☥☥☥☥☥"; /* Add at least as many spaces as characters in your text */
+  content: "☥ ☥ ☥ ☥ ☥ ☥ ☥ ☥ ☥ ☥"; /* Add at least as many spaces as characters in your text */
   white-space: pre-wrap;
   display: inline-block;
   overflow: hidden;
