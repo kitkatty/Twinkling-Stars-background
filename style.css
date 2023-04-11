@@ -64,7 +64,7 @@ Twinkle , twinkle little star.
   white-space: pre-wrap;
   display: inline-block;
   overflow: hidden;
-  animation: type 12s steps(70, end) forwards;
+  animation: type 12s steps(90, end) forwards;
 }
 
 @keyframes type {
